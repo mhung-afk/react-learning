@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-export default function ScorePerTeam() {
-    const [count, setCount] = useState(0);
+export default function ScorePerTeam({ count, setCount }) {
 
     function changeCountHandler(sign) {
         if (sign === '+')
@@ -10,8 +9,6 @@ export default function ScorePerTeam() {
             if (count === 0) return
             setCount(count-1)
         }
-            
-            
     }
 
     return (
