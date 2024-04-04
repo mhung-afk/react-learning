@@ -9,11 +9,6 @@ export default function Count() {
         else if (sign === '-')
             setCount(count-1)
     }
-
-    // function wrapChangeCountHandler(sign) {
-    //     return () => changeCountHandler(sign)
-    // }
-
     return (
         <div>
             <h2 className='text-red-400'>{count}</h2>
