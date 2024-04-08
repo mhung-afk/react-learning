@@ -1,10 +1,16 @@
 import React from 'react'
 
-export default function ScorePerTeam({ count, setCount }) {
+export default function ScorePerTeam({ count, setCount, setGoals, teamNum }) {
 
     function changeCountHandler(sign) {
-        if (sign === '+')
+        if (sign === '+') {
             setCount(count+1)
+            setGoals(prev => {
+                const newGoals = prev.map((val) => val)
+                newGoals.push(teamNum)
+                return newGoals
+            })
+        }
         else if (sign === '-'){
             if (count === 0) return
             setCount(count-1)
