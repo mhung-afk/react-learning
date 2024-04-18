@@ -2,11 +2,11 @@ import React from 'react'
 import UserName from '../components/UserName'
 import UserAge from '../components/UserAge'
 
-export default function User({data}) {
+export default function User() {
   return (
     <>
-        <UserName name={data.name} />
-        <UserAge age={data.age} />
+        <UserName />
+        <UserAge />
     </>
   )
 }
