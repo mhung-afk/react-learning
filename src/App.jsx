@@ -5,20 +5,20 @@ import User from "./pages/User";
 import UserContext from "./context/userContext";
 
 function App() {
-  const user = {
-    name: 'Super man',
-    age: 30
-  }
+  // const user = {
+  //   name: 'Super man',
+  //   age: 30
+  // }
 
   return (
     <>
       <div className="absolute left-1/2 -translate-x-1/2">
         {/* <Count /> */}
-        <UserContext.Provider value={user}>
+        {/* <UserContext.Provider value={user}>
           <User />
-        </UserContext.Provider>
+        </UserContext.Provider> */}
       </div>
-      {/* <ScoreBoard className='text-red-400' /> */}
+      <ScoreBoard className='text-red-400' />
     </>
   );
 }
