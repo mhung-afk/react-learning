@@ -1,7 +1,9 @@
 import React from 'react'
+import { useScoreboardContext } from '../context/scoreboardContext'
 
-export default function ScorePerTeam({ count, setCount, setGoals, teamNum }) {
-
+export default function ScorePerTeam({ setGoals, teamNum }) {
+    const {setCount} = useScoreboardContext()
+    const {count} = useScoreboardContext()
     function changeCountHandler(sign) {
         if (sign === '+') {
             setCount(count+1)
