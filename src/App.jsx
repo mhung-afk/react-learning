@@ -9,10 +9,10 @@ import Login from "./pages/Login";
 import Error from "./pages/Error";
 
 function App() {
-  const user = {
-    name: 'Super man',
-    age: 30
-  }
+  // const user = {
+  //   name: 'Super man',
+  //   age: 30
+  // }
 
   return (
     <>
